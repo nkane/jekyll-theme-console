@@ -418,4 +418,11 @@ pre {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px 0; // Default padding for larger screens
+  @media (max-width: 768px) {
+    padding: 15px 0; // Smaller padding for tablets and smaller screens
+  }
+  @media (max-width: 480px) {
+    padding: 10px 0; // Even smaller padding for mobile screens
+  }
 }
