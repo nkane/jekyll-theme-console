@@ -444,41 +444,22 @@ pre {
   height: 100%;
 }
 
-/* Make the table smaller */
+/* Add borders to the table */
 table {
-  width: 100%; /* Adjust or set to a specific width */
-  max-width: 800px; /* Set a maximum width */
-  margin: 0 auto; /* Center the table */
-  border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders are merged */
 }
 
-/* Style table borders */
+/* Add borders to table, header, and data cells */
 table,
 th,
 td {
-  border: 1px solid #ddd;
+  border: 1px solid #ddd; /* Light gray border color */
 }
 
-/* Make table content more compact */
+/* Optional: Add some padding for readability */
 th,
 td {
-  padding: 0.25em; /* Reduce padding for a more compact look */
-  text-align: center;
-}
-
-/* Optional: Adjust font size */
-th,
-td {
-  font-size: 0.9em; /* Smaller text size */
-}
-
-/* Add a responsive wrapper for smaller screens */
-@media (max-width: 768px) {
-  .responsive-table-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
-  }
-  table {
-    min-width: 600px; /* Ensure table is wide enough to scroll */
-  }
+  padding: 0.5em;
+  text-align: left; /* Default text alignment */
 }
