@@ -462,9 +462,19 @@ td {
   text-align: center;
 }
 
-/* Styling for blockquotes */
-blockquote {
-  border-left: 4px solid #ddd;
-  padding-left: 1em;
-  margin-left: 0;
+@media (max-width: 768px) {
+  .responsive-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+  }
+  table {
+    width: 100%;
+    min-width: 600px; /* Ensure table is wide enough to scroll */
+    border: none; /* Remove borders for better scrolling */
+  }
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+  }
 }
