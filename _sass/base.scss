@@ -444,15 +444,13 @@ pre {
   height: 100%;
 }
 
-/* Add borders to the table */
+/* General table styling */
 table {
   width: 100%;
-  border-collapse: collapse; /* Ensures borders are merged */
-  width: 100%; /* Adjust or set to a specific width */
   max-width: 800px; /* Set a maximum width */
   margin: 0 auto; /* Center the table */
-  border-collapse: collapse;
-  font-size: 0.9em;
+  border-collapse: collapse; /* Ensures borders are merged */
+  font-size: 0.9em; /* Smaller text size */
 }
 
 /* Add borders to table, header, and data cells */
@@ -462,15 +460,14 @@ td {
   border: 1px solid #ddd; /* Light gray border color */
 }
 
-/* Optional: Add some padding for readability */
+/* Add padding and default text alignment */
 th,
 td {
-  padding: 0.5em;
+  padding: 0.5em; /* Padding for readability */
   text-align: left; /* Default text alignment */
-  font-size: 0.9em; /* Smaller text size */
 }
 
-/* Add a responsive wrapper for smaller screens */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .responsive-table-wrapper {
     overflow-x: auto;
@@ -479,9 +476,5 @@ td {
   table {
     min-width: 600px; /* Ensure table is wide enough to scroll */
     font-size: 0.8em; /* Further reduce font size on smaller screens */
-  }
-  th,
-  td {
-    padding: 0.5em; /* Adjust padding for readability */
   }
 }
