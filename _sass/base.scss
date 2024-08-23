@@ -444,37 +444,41 @@ pre {
   height: 100%;
 }
 
+/* Make the table smaller */
 table {
-  width: 100%;
+  width: 100%; /* Adjust or set to a specific width */
+  max-width: 800px; /* Set a maximum width */
+  margin: 0 auto; /* Center the table */
   border-collapse: collapse;
-  margin-bottom: 1em;
 }
 
+/* Style table borders */
 table,
 th,
 td {
   border: 1px solid #ddd;
 }
 
+/* Make table content more compact */
 th,
 td {
-  padding: 0.5em;
+  padding: 0.25em; /* Reduce padding for a more compact look */
   text-align: center;
 }
 
+/* Optional: Adjust font size */
+th,
+td {
+  font-size: 0.9em; /* Smaller text size */
+}
+
+/* Add a responsive wrapper for smaller screens */
 @media (max-width: 768px) {
   .responsive-table-wrapper {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
   }
   table {
-    width: 100%;
     min-width: 600px; /* Ensure table is wide enough to scroll */
-    border: none; /* Remove borders for better scrolling */
-  }
-  th,
-  td {
-    border: 1px solid #ddd;
-    padding: 0.5em;
   }
 }
