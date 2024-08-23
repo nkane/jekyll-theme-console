@@ -10,16 +10,13 @@ A jekyll theme with inspiration from linux consoles for hackers, developers and 
 
 [<img src="https://raw.githubusercontent.com/b2a3e8/jekyll-theme-console/master/screenshot-dark.png" width="350" title="Screenshot">](https://b2a3e8.github.io/jekyll-theme-console-demo-dark/)
 
-
 [light style](https://b2a3e8.github.io/jekyll-theme-console-demo-light/) ([source code](https://github.com/b2a3e8/jekyll-theme-console-demo-light)):
 
 [<img src="https://raw.githubusercontent.com/b2a3e8/jekyll-theme-console/master/screenshot-light.png" width="350" title="Screenshot">](https://b2a3e8.github.io/jekyll-theme-console-demo-light/)
 
-
 [hacker style](https://b2a3e8.github.io/jekyll-theme-console-demo-hacker/) ([source code](https://github.com/b2a3e8/jekyll-theme-console-demo-hacker)):
 
 [<img src="https://raw.githubusercontent.com/b2a3e8/jekyll-theme-console/master/screenshot-hacker.png" width="350" title="Screenshot">](https://b2a3e8.github.io/jekyll-theme-console-demo-hacker/)
-
 
 ## Installation
 
@@ -65,9 +62,10 @@ To update the theme run `bundle update`.
 
 ## Usage
 
-### _config.yaml
+### \_config.yaml
 
 In addition to jekyll's default configuration options, you can provide:
+
 - `header_pages` to specify which pages should be displayed in navbar
 - `footer` string, which will be inserted on the end of the page (doesn't support markup, but html)
 - `google_analytics` tracking id (tracking will be enabled only in production environments and only if you set this option, no Google Analytics code will be loaded if you don't set this option)
@@ -90,6 +88,7 @@ google_analytics: UA-NNNNNNNN-N
 ### front matter variables
 
 Besides the predefined [front matter](https://jekyllrb.com/docs/front-matter/) variables from jekyll this theme also supports following variables:
+
 - `title` to set a title for the page
 - `lang` to specify the language, defaults to 'en'
 - `robots` to control the robot meta tag ([details](http://longqian.me/2017/02/12/jekyll-robots-configuration/)) - this may be useful for example to set `NOINDEX` to tag pages
@@ -97,6 +96,7 @@ Besides the predefined [front matter](https://jekyllrb.com/docs/front-matter/) v
 ## Customization
 
 If you want to customize this theme, follow this steps:
+
 1. Fork this repository (you can use the fork as your own theme or directly as your website)
 2. Create or modify files in `_layouts` directory for html-based changes
 3. Create or modify files in `_sass` and `assets` for css-based changes
