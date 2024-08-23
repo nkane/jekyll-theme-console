@@ -446,16 +446,13 @@ pre {
 
 /* Add borders to the table */
 table {
-<<<<<<< Updated upstream
   width: 100%;
   border-collapse: collapse; /* Ensures borders are merged */
-=======
   width: 100%; /* Adjust or set to a specific width */
   max-width: 800px; /* Set a maximum width */
   margin: 0 auto; /* Center the table */
   border-collapse: collapse;
   font-size: 0.9em;
->>>>>>> Stashed changes
 }
 
 /* Add borders to table, header, and data cells */
