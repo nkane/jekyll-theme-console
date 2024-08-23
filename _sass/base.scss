@@ -446,8 +446,16 @@ pre {
 
 /* Add borders to the table */
 table {
+<<<<<<< Updated upstream
   width: 100%;
   border-collapse: collapse; /* Ensures borders are merged */
+=======
+  width: 100%; /* Adjust or set to a specific width */
+  max-width: 800px; /* Set a maximum width */
+  margin: 0 auto; /* Center the table */
+  border-collapse: collapse;
+  font-size: 0.9em;
+>>>>>>> Stashed changes
 }
 
 /* Add borders to table, header, and data cells */
@@ -462,4 +470,21 @@ th,
 td {
   padding: 0.5em;
   text-align: left; /* Default text alignment */
+  font-size: 0.9em; /* Smaller text size */
+}
+
+/* Add a responsive wrapper for smaller screens */
+@media (max-width: 768px) {
+  .responsive-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+  }
+  table {
+    min-width: 600px; /* Ensure table is wide enough to scroll */
+    font-size: 0.8em; /* Further reduce font size on smaller screens */
+  }
+  th,
+  td {
+    padding: 0.5em; /* Adjust padding for readability */
+  }
 }
